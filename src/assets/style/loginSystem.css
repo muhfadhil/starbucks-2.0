@@ -1,0 +1,62 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  /* border: 1px solid salmon; */
+}
+
+.container {
+  margin-top: 50px;
+  width: 500px;
+  height: max-content;
+  padding: 40px;
+  background-color: #007042;
+  border-radius: 20px;
+  /* border: 1px solid salmon;s */
+}
+
+.title {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.form-registrasi {
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid salmon; */
+}
+.form-registrasi form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+  /* border: 1px solid salmon; */
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-group input {
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+#registrasi-btn,
+#login-btn {
+  border-radius: 10px;
+  padding: 5px 15px;
+  width: max-content;
+}
+
+.form-registrasi form a {
+  /* text-decoration: none; */
+  color: white;
+  letter-spacing: 1px;
+}
+
+.form-registrasi form a:hover {
+  color: aqua;
+}
