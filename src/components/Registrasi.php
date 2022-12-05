@@ -38,15 +38,15 @@
         <form action="" method="post">
           <div class="input-group">
             <label for="username">Username :</label>
-            <input type="text" name="username" id="username">
+            <input type="text" name="username" id="username" required autocomplete="off">
           </div>
           <div class="input-group">
             <label for="password">Password :</label>
-            <input type="password" name="password" id="password">
+            <input type="password" name="password" id="password" required>
           </div>
           <div class="input-group">
             <label for="password-confirm">Konfirmasi Password :</label>
-            <input type="password" name="password-confirm" id="password-confirm">
+            <input type="password" name="password-confirm" id="password-confirm" required>
           </div>
           <button id="registrasi-btn" type="submit" name="submit">Sign Up</button>
           <p>Sudah punya akun? <a href="./Login.php">login!</a></p>
