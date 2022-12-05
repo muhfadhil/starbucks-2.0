@@ -1,3 +1,19 @@
+<?php
+session_start();
+require "../handlers/functions.php";
+
+if (isset($_SESSION["login"])) {
+  header("Location: ../index.php");
+  exit;
+}
+
+if (isset($_POST["submit"])) {
+  $data_dir = "../DATA/user.txt";
+  loginUser($data_dir, $_POST);
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +23,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../assets/style/style.css" />
   <link rel="stylesheet" href="../assets/style/loginSystem.css">
-  <title>Registrasi</title>
+  <title>Login</title>
 </head>
 
 <body>
@@ -38,7 +54,7 @@
         <form action="" method="post">
           <div class="input-group">
             <label for="username">Username :</label>
-            <input type="text" name="username" id="username">
+            <input type="text" name="username" id="username" autocomplete="off">
           </div>
           <div class="input-group">
             <label for="password">Password :</label>

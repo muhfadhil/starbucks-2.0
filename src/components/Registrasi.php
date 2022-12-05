@@ -1,3 +1,20 @@
+<?php
+session_start();
+require "../handlers/functions.php";
+
+if (isset($_SESSION["login"])) {
+  header("Location: ../index.php");
+  exit;
+}
+
+if (isset($_POST["submit"])) {
+  $data_dir = "../DATA/user.txt";
+  addUser($data_dir, $_POST);
+  alert_redirect("User berhasil dibuat!", "./Login.php");
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

@@ -40,6 +40,7 @@
         <li><a href="./components/Location.php">Location</a></li>
         <li><a href="./components/AboutUs.php">About Us</a></li>
       </ul>
+      <a href="./components/Logout.php">Logout</a>
     </section>
     <p>
       &copy; 2022 Amanda Marella Tifadi | Fariel Ahmad Sudrajat | Layla Indah
